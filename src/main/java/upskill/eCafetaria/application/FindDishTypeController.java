@@ -28,4 +28,8 @@ public class FindDishTypeController {
         return Optional.of(dishTypeMapper.toDishTypeDTO(dishType.get()));
 
     }
+
+    public Iterable<DishTypeDto> findAll() {
+        return dishTypeMapper.toDishTypeDTOList(repo.findAll());
+    }
 }

@@ -23,8 +23,9 @@ public class DishTypeRestController {
 
 
     @GetMapping
-
-
+    public Iterable<DishTypeDto> findAll() {
+        return finderController.findAll();
+    }
 
     @GetMapping ("/{acronym}")
     public DishTypeDto findByAcronym (@PathVariable String acronym ) {
@@ -35,11 +36,10 @@ public class DishTypeRestController {
         return dishTypeDTO.get();
     }
 
-
-    @PutMapping
-
-
-
+    @PutMapping("/{acronym}")
+    public DishTypeDto createOrUpdateDishType(@PathVariable String acronym, @RequestBody CreateDishTypeDto createDishTypeDto) {
+        return createUpdateDishTypeController.createOrUpdateDishType(acronym, createDishTypeDto);
+    }
 
 
 }
