@@ -1,4 +1,4 @@
 package upskill.eCafetaria.domain;
 
-public class DishType {
+public class Acronym {
 }

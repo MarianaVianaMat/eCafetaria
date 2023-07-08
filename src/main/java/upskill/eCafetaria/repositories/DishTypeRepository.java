@@ -1,2 +1,4 @@
-package upskill.eCafetaria.repositories;public interface DishTypeRepository {
+package upskill.eCafetaria.repositories;
+
+public interface DishTypeRepository {
 }

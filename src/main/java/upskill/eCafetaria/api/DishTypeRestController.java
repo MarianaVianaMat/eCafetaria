@@ -1,2 +1,4 @@
-package upskill.eCafetaria.api;public class DishTypeRestController {
+package upskill.eCafetaria.api;
+
+public class DishTypeRestController {
 }
