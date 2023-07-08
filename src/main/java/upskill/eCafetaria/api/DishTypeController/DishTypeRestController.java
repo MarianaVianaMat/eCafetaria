@@ -22,10 +22,6 @@ public class DishTypeRestController {
     CreateUpdateDishTypeController createUpdateDishTypeController;
 
 
-    @GetMapping
-
-
-
     @GetMapping ("/{acronym}")
     public DishTypeDto findByAcronym (@PathVariable String acronym ) {
         Optional <DishTypeDto> dishTypeDTO = finderController.findByAcronym(acronym);
@@ -35,8 +31,6 @@ public class DishTypeRestController {
         return dishTypeDTO.get();
     }
 
-
-    @PutMapping
 
 
 
