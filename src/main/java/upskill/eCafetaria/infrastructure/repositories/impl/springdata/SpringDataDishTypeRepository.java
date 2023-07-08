@@ -5,4 +5,8 @@ import upskill.eCafetaria.domain.DishType;
 import upskill.eCafetaria.repositories.DishTypeRepository;
 
 public interface SpringDataDishTypeRepository extends CrudRepository <DishType, Long>, DishTypeRepository {
+
+
+
+
 }

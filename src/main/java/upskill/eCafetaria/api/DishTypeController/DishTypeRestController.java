@@ -20,8 +20,7 @@ public class DishTypeRestController {
     FindDishTypeController finderController;
     @Autowired
     CreateUpdateDishTypeController createUpdateDishTypeController;
-    @Autowired
-    DishTypeMapper dishTypeMapper;
+
 
     @GetMapping
 
