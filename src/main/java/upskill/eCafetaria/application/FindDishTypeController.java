@@ -20,12 +20,12 @@ public class FindDishTypeController {
     DishTypeRepository repo;
 
 
-    public Optional<DishTypeDto> findByAcronym (String acronym) {
-
-        Optional <DishType> dishType = repo.findByAcronym(dishTypeMapper.toAcronym(acronym));
-
-
-
+    public Optional<DishTypeDto> findByAcronym(String acronym) {
+        Optional<DishType> dishType = repo.findByAcronym(dishTypeMapper.toAcronym(acronym));
+        if (dishType.isEmpty()) {
+            return Optional.empty();
+        }
+        return Optional.of(dishTypeMapper.toDishTypeDTO(dishType.get()));
 
     }
 }
