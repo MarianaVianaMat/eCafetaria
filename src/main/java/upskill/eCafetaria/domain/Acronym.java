@@ -18,4 +18,7 @@ public class Acronym {
     protected Acronym() {
         this.acronym = null;
     }
+    public String getAcronym() {
+        return acronym;
+    }
 }

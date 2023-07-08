@@ -16,4 +16,8 @@ public class Description {
     protected Description() {
         this.description = null;
     }
+
+    public String getDescription() {
+        return description;
+    }
 }

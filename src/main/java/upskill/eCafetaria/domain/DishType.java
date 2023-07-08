@@ -16,13 +16,23 @@ public class DishType {
     @NotNull
     private Description description;
 
-    public DishType(Long id, Acronym acronym, Description description) {
-        this.id = id;
+    public DishType(Acronym acronym, Description description) {
         this.acronym = acronym;
         this.description = description;
     }
 
-    public DishType() {
+    protected DishType() {
+    }
 
+    public Acronym getAcronym() {
+        return acronym;
+    }
+
+    public Description getDescription() {
+        return description;
+    }
+
+    public void setDescription(Description description) {
+        this.description = description;
     }
 }

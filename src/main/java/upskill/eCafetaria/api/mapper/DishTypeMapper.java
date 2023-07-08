@@ -12,7 +12,16 @@ import upskill.eCafetaria.domain.DishType;
 public abstract class DishTypeMapper {
 
     public abstract Acronym toAcronym(String acronym);
+
+    public String fromAcronym(Acronym acronym) {
+        return acronym.getAcronym();
+    }
+
     public abstract Description toDescription(String description);
+
+    public String fromDescription(Description description) {
+        return description.getDescription();
+    }
 
     public abstract DishTypeDto toDishTypeDTO(DishType dishType);
 
