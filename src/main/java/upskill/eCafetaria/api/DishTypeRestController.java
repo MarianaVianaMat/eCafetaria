@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import upskill.eCafetaria.api.dto.CreateDishTypeDto;
+import upskill.eCafetaria.api.dto.DishTypeDto;
 import upskill.eCafetaria.application.dishTypeController.CreateUpdateDishTypeController;
 import upskill.eCafetaria.application.dishTypeController.FindDishTypeController;
 
