@@ -1,6 +1,5 @@
 package upskill.eCafetaria.domain;
 
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
