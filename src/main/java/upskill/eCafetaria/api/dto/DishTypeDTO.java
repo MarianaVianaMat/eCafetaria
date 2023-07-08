@@ -1,4 +1,5 @@
 package upskill.eCafetaria.api.dto;
 
-public class CreateDishTypeDto {
+public class DishTypeDTO {
+
 }
