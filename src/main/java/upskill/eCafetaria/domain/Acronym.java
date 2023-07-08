@@ -9,7 +9,7 @@ public class Acronym {
     private final String acronym;
 
     public Acronym(String acronym) {
-        if (acronym.isEmpty() || acronym == null || acronym.length() > 10 || acronym.trim().split(" ").length != 1 || !acronym.matches("[a-z A-Z]")) {
+        if (acronym == null || acronym.isEmpty() || acronym.length() > 10 || acronym.trim().split(" ").length != 1 || !acronym.matches("[a-z A-Z]")) {
             throw new IllegalArgumentException("Acrónimo inválido");
         }
         this.acronym = acronym;
