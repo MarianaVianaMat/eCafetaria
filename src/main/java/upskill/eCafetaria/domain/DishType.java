@@ -7,6 +7,7 @@ import javax.validation.constraints.NotNull;
 @Entity
 public class DishType {
     @Id
+    @GeneratedValue (strategy = GenerationType.SEQUENCE)
     private Long id;
     @Embedded
     @Column(unique = true)
