@@ -1,14 +1,12 @@
-package upskill.eCafetaria.api.DishTypeController;
+package upskill.eCafetaria.api;
 
-import nonapi.io.github.classgraph.utils.VersionFinder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-import upskill.eCafetaria.api.Mapper.DishTypeMapper;
-import upskill.eCafetaria.application.CreateUpdateDishTypeController;
-import upskill.eCafetaria.application.FindDishTypeController;
-import upskill.eCafetaria.domain.Acronym;
+import upskill.eCafetaria.api.dto.CreateDishTypeDto;
+import upskill.eCafetaria.application.dishTypeController.CreateUpdateDishTypeController;
+import upskill.eCafetaria.application.dishTypeController.FindDishTypeController;
 
 import java.util.Optional;
 

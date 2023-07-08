@@ -1,14 +1,11 @@
-package upskill.eCafetaria.api.Mapper;
+package upskill.eCafetaria.api.mapper;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
-import org.springframework.stereotype.Component;
-import upskill.eCafetaria.api.DishTypeController.CreateDishTypeDto;
+import upskill.eCafetaria.api.dto.CreateDishTypeDto;
 import upskill.eCafetaria.api.DishTypeController.DishTypeDto;
 import upskill.eCafetaria.domain.Acronym;
 import upskill.eCafetaria.domain.DishType;
-
-import java.util.Optional;
 
 @Mapper(componentModel = "spring")
 public abstract class DishTypeMapper {

@@ -1,9 +1,9 @@
-package upskill.eCafetaria.application;
+package upskill.eCafetaria.application.dishTypeController;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import upskill.eCafetaria.api.DishTypeController.DishTypeDto;
-import upskill.eCafetaria.api.Mapper.DishTypeMapper;
+import upskill.eCafetaria.api.mapper.DishTypeMapper;
 import upskill.eCafetaria.domain.DishType;
 import upskill.eCafetaria.repositories.DishTypeRepository;
 
