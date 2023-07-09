@@ -15,7 +15,7 @@ class DescriptionTest {
     void ensureAcronymLessThanHundredCharThrowException() {
         StringBuilder string = new StringBuilder();
         for (int i = 0; i <= 100; i++) {
-            string.append("hi");
+            string.append("i");
         }
         Assertions.assertThrows(IllegalArgumentException.class, () -> new DishType(new Acronym("carne"), new Description(string.toString())));
     }
