@@ -1,5 +1,4 @@
 package upskill.eCafetaria.api;
-
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -15,7 +14,6 @@ import upskill.eCafetaria.api.dto.DishTypeDto;
 import upskill.eCafetaria.application.dishTypeController.CreateUpdateDishTypeController;
 import upskill.eCafetaria.application.dishTypeController.FindDishTypeController;
 import upskill.eCafetaria.domain.DishType;
-
 import java.util.Optional;
 
 @RestController
@@ -92,6 +90,4 @@ public class DishTypeRestController {
     public DishTypeDto createOrUpdateDishType(@PathVariable @Parameter(description = "dishtype acronym")  String acronym, @RequestBody @Parameter (description = "Dishtype description") CreateDishTypeDto createDishTypeDto) {
         return createUpdateDishTypeController.createOrUpdateDishType(acronym, createDishTypeDto);
     }
-
-
 }
