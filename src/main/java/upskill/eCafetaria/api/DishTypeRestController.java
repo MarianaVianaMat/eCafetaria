@@ -43,7 +43,6 @@ public class DishTypeRestController {
             }
     )
 
-
     public Iterable<DishTypeDto> findAll() {
         return finderController.findAll();
     }
