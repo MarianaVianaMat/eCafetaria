@@ -7,3 +7,4 @@ public class DishTypeDto {
     String acronym;
     String description;
 }
+
