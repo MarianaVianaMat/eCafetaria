@@ -14,11 +14,10 @@ public class Acronym {
         }
         this.acronym = acronym;
     }
-
     protected Acronym() {
         this.acronym = null;
     }
     public String getAcronym() {
-        return acronym;
+        return acronym; // esta existência é discutível. o acrónimo deve ser o guardião da informação. Existe mas n é para fazer lógica de negócio com ele. está aqui por causa dd mapper
     }
 }
